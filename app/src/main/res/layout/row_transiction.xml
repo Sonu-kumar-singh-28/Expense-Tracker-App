@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="10dp"
+        android:background="@drawable/category_bg"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Middle Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/category_icon"
+        app:layout_constraintTop_toTopOf="@id/category_icon"
+        app:layout_constraintBottom_toBottomOf="@id/category_icon"
+        app:layout_constraintEnd_toStartOf="@id/transictionammount">
+
+        <TextView
+            android:id="@+id/transictioncategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Inner Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accountLBL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_bg"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:text="Cash"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/transictiondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="17 May 2025"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Amount -->
+    <TextView
+        android:id="@+id/transictionammount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/category_icon"
+        app:layout_constraintBottom_toBottomOf="@id/category_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
