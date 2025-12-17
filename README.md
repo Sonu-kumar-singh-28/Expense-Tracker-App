@@ -22,7 +22,7 @@ This repository is based on a complete step-by-step implementation that is suita
 
 🛠️ Tech Stack & Concepts Used
 
-Language: Kotlin
+Language: Kotlin.
 
 Architecture: MVVM (Model–View–ViewModel)
 
