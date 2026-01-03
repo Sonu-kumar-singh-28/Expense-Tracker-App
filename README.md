@@ -1,4 +1,4 @@
-Expense Tracker App.– Readme
+Expense Tracker App.– Readme..
 
 An advanced Expense Manager Android application that helps users efficiently manage their income, expenses, notes, and multiple accounts. This project is built with clean architecture, modern Android components, and professional coding practices, making it ideal for both learning and real-world use.
 
